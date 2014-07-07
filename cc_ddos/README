@@ -4,7 +4,7 @@ bash grab_proxy.sh
 
 2,check_proxy.sh 检测代理
 bash check_proxy.sh proxy.txt > soldier.txt
-declare check_threads=10 #验证代理可用性时的并发数，看一下代码就会发现，我们使用的是GET http://baidu.com方法
+declare check_threads=10 #验证代理可用性时的并发数，看一下代码就会发现，我们使用的是GET http://baidu.com
 
 3，cc.sh 攻击
 bash cc.sh soldier.txt
