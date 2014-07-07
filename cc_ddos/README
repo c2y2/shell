@@ -1,0 +1,10 @@
+1,grab_proxy.sh 获取代理
+bash grab_proxy.sh
+参数：declare proxyListFile=”proxy.txt”  #抓取到的代理ip port对所存放的文件路径
+
+2,check_proxy.sh 检测代理
+bash check_proxy.sh proxy.txt > soldier.txt
+declare check_threads=10 #验证代理可用性时的并发数，看一下代码就会发现，我们使用的是GET http://baidu.com方法
+
+3，cc.sh 攻击
+bash cc.sh soldier.txt
