@@ -62,6 +62,7 @@ memory1=$(echo "scale=3;${memory%/*}/1024/1024" | bc)
 disk=$(df -h | grep "rootfs" | awk '{print $3}')
 disk1=$(df -h | grep "rootfs" | awk '{print $4}')
 
+
 #RAM
 ram=$(free -m | grep -i "mem:" | awk '{print $3}')MB
 ram1=$(free -m | grep -i "mem:" | awk '{print $2}')MB
